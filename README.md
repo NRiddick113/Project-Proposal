@@ -11,6 +11,8 @@
 - As a user, I will be able to click a button to buy more simulating games for Autistic people.
 - As a user, I will be able to browse/search differnt games and add it to my favorite.
 - As a user, I will be able to get more details when I click on the game.
+- As a user, I will be able to add/delete games from the Index.
+- As a user, I will be able to edit a game info that may be out of date.
 
 ![1](https://user-images.githubusercontent.com/105731910/217038354-2724e98d-f232-4297-8d9d-951f8191bd44.png)
 ![2](https://user-images.githubusercontent.com/105731910/217038382-a526a43b-f6fe-4833-b568-3560a044ac91.png)
