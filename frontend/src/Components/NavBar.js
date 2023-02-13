@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import Cart from './Cart.js'
 
 function NavBar() {
     return (
@@ -14,7 +15,7 @@ function NavBar() {
                 <Link to='/games/new'>Add New Game</Link>
             </h1>
             <h1>
-                <Link to={<Cart />}>Cart</Link>
+                <Link to='./games/cart'>Cart</Link>
             </h1>
         </div>
     );

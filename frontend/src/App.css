@@ -1,0 +1,66 @@
+.NavBar {
+    display: flex;
+    justify-content:space-between;
+    padding: 30px;
+}
+
+body{
+ margin: 0px;
+    background-color: yellow;
+}
+
+.Home {
+    width: 150vh;
+    height: 150vh;
+    background-image: url('../assets/6.png');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+    
+}
+.Games{
+    display: flex;
+    width: 250vh;
+    height: 350vh;
+    background-image: url('../assets/7.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cards{
+    grid-gap: 20px;
+    display: grid;
+    /* grid-auto-rows: 320px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 320px; */
+    /* margin-top: 25px; */
+    /* padding-bottom: 50px; */
+}
+
+.card{
+    background-color: #4a04bb;
+    border: 1px transparent;
+    border-radius: 8px;
+    grid-column: auto;
+    transition: transform .2s;
+    width: 70%;
+}
+
+.card:hover{
+    transform: scale(1.5);
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-top: 5%;
+}
+
+textarea{
+    resize: none;
+    outline: none;
+}

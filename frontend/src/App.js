@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import Index from "./Pages/Index";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
+import Cart from "./Components/Cart"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Index />} />
             <Route path="/games/new" element={<New />} />
+            <Route path="/games/cart" element={<Cart />} />
             <Route path="/games/:id" element={<Show />} />
             <Route path="/games/:id/edit" element={<Edit />} />
             <Route path="*" element={<Error />} />
