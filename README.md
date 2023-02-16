@@ -4,6 +4,9 @@
 
 - I want to build an online game store that allows the user the search the online game store and buy they favorite game. But least not just limit it there. This game store with the click of a button will also allow more stimulating games to apper for people with austism that loves gaming too.
 
+## DEPLOYMENTS
+- https://gamingproject.onrender.com/games
+- https://animated-crostata-abd92a.netlify.app/games
 
 ## User Stories
 
@@ -18,3 +21,4 @@
 ![2](https://user-images.githubusercontent.com/105731910/217038382-a526a43b-f6fe-4833-b568-3560a044ac91.png)
 ![3](https://user-images.githubusercontent.com/105731910/217038432-c954e792-d6a6-47e3-b0c3-a920771c57d5.png)
 ![5](https://user-images.githubusercontent.com/105731910/217038325-97e6acbc-cede-4ab9-a31f-73294c99ce0f.png)
+
