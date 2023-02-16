@@ -41,7 +41,7 @@ function GameNew() {
       };
 
     return (
-        <div>
+        <div id="form-container">
             <form onSubmit={handleSubmit}>
                 <label htmlFor="title">Title:</label>
                 <input

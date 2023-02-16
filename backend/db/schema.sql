@@ -12,6 +12,7 @@ CREATE TABLE games(
     developers TEXT,
     platforms TEXT,
     genres TEXT NOT NULL,
+    autisic BOOLEAN,
     image TEXT,
     rating NUMERIC,
     CHECK (rating >= 0 AND rating <=5)

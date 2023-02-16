@@ -6,30 +6,50 @@ const API = process.env.REACT_APP_API_URL
 
 function Games() {
     const [games, setGames] = useState([])
+    const [neurodiversity, setNeurodiversity] = useState('all')
+    const [genre, setGenre] = useState([])
+  
+useEffect(() => {
+    axios
+    .get(`${API}/games`)
+    .then((res) =>{
+        setGames(res.data)
+    })
+    .catch(err => console.error())
+}, [])
 
-    useEffect(() => {
-        axios
-        .get(`${API}/games`)
-        .then((res) =>{
-            setGames(res.data)
-        })
-        .catch(err => console.error())
-    }, [])
- console.log(games)
-    return (
+const filterGameList = neurodiversity !== 'all' ? games.filter(game => game.autisic.toString() === neurodiversity) : games
+
+function filterByGenre() {
+    
+}
+
+
+return (
         <div className="Games">
             <aside className="fliter">
-                <h3>Filter</h3>
-                <h3>Genres</h3>
+                <h2>Filter by Genres</h2>
+                <button>RPG</button>
+                <button>Shooter</button>
+                <button>Adventure</button>
+
             </aside>
             <main className="cards">
-            {games.map((game) => {
+            {filterGameList.map((game) => {
         return (
         <Game key={game.id} game={game}/>
             )
         })}
             </main>
-            <aside className="Autism">Autism's Play</aside>
+            <aside className="Autism">Autism's Play
+            <select name='autism' id='autism' 
+            onChange={(e)=> setNeurodiversity(e.target.value)}
+            >
+            <option value='all' default>All Games</option>
+            <option value='false'>Neurotypical</option>
+            <option value='true'>Neurodivergent</option>
+            </select>
+            </aside>
         </div>
     );
 }

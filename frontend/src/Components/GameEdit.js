@@ -50,7 +50,7 @@ const updateGame = (updateGame) => {
           updateGame(game);
         };
     return (
-        <div>
+        <div id="form-container">
             <form onSubmit={handleSubmit}>
                 <label htmlFor="title">Title:</label>
                 <input
@@ -134,7 +134,7 @@ const updateGame = (updateGame) => {
                  <br />
         <input type="submit" />    
         </form>
-        <Link to={`/snacks/${id}`}>
+        <Link to={`/games/${id}`}>
         <button>Back</button>
       </Link>
         </div>

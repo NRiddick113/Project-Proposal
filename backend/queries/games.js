@@ -9,6 +9,15 @@ const getAllGames = async () => {
   }
 };
 
+const getAusticFriendlyGames = async (autisic) => {
+  try {
+    const getAusticGames = await db.any("SELECT * FROM games WHERE id=$1", autisic );
+    return getAusticGames;  
+  } catch (error) {
+    return error;
+  }
+}
+
 const getGame = async (id) => {
   try {
     const oneGame = await db.one("SELECT * FROM games WHERE id=$1", id);
@@ -54,4 +63,4 @@ const updateGame = async (id, game) => {
 }
 
 
-module.exports = { getAllGames, getGame, createGame, deleteGame, updateGame };
+module.exports = { getAllGames, getGame, createGame, deleteGame, updateGame, getAusticFriendlyGames };

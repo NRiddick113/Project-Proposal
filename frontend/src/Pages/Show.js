@@ -3,7 +3,7 @@ import GameDetails from '../Components/GameDetails';
 
 const Show = () => {
     return (
-        <div>
+        <div className='Show'>
             <GameDetails />
         </div>
     );

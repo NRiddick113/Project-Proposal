@@ -3,7 +3,7 @@ import GameEdit from '../Components/GameEdit';
 
 function Edit() {
     return (
-        <div>
+        <div className='edit'>
             <h2>Edit</h2>
             <GameEdit />
         </div>

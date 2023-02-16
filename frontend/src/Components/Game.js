@@ -8,8 +8,6 @@ function Game({game}) {
         <Link to={`/games/${game.id}`}>
             <img src={game.image} alt={game.title}></img>
         </Link>
-            <button>Add to cart</button>
-            <p>${game.price}</p>
             <h2>{game.title}</h2>
             </div>
             <div>

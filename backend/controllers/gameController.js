@@ -6,7 +6,8 @@ const {
   getGame,
   createGame,
   deleteGame,
-  updateGame
+  updateGame,
+  getAusticFriendlyGames
 } = require("../queries/games");
 
 // INDEX
@@ -14,10 +15,13 @@ games.get("/", async (req, res) => {
   const allGames = await getAllGames();
   if (allGames[0]) {
     res.status(200).json(allGames);
-  } else {
+  } 
+  else {
     res.status(500).json({ error: "server error" });
   }
 });
+
+games.get("/",)
 
 // SHOW
 games.get("/:id", async (req, res) => {
