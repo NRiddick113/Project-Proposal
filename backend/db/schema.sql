@@ -3,7 +3,9 @@ CREATE DATABASE games_dev;
 
 \c games_dev;
 
-CREATE TABLE games(
+DROP TABLE IF EXISTS games;
+
+CREATE TABLE games (
     id SERIAL PRIMARY KEY,
     title TEXT NOT NULL,
     price NUMERIC,
@@ -16,4 +18,4 @@ CREATE TABLE games(
     image TEXT,
     rating NUMERIC,
     CHECK (rating >= 0 AND rating <=5)
-)
+);
