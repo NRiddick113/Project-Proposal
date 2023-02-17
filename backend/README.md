@@ -19,7 +19,7 @@ It would be best to open a new terminal tab dedicated to running and developing 
 **.env**
 
 ```
-PORT=3333
+PORT=3003
 PG_HOST=localhost
 PG_PORT=5432
 PG_DATABASE=
@@ -29,5 +29,5 @@ PG_DATABASE=
 - `npm run db:init` - initialize a new database and create tables.
 - `npm run db:seed` - seed the table(s) with some data.
 - `nodemon` - confirm that this is running on port 3333.
-- Visit http://localhost:3333/Intended-Name/ and make sure you see some data in the form of an array of objects.
+- Visit http://localhost:3003/Intended-Name/ and make sure you see some data in the form of an array of objects.
 - `npm run test` - to run the back-end tests.
